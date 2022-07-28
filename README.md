@@ -1,13 +1,3 @@
-# Applicazioni Internet 2017-18
-
-## Esercitazione 3
-
-##### Gruppo 3
-
-* **Alberto Tambone**
-* **Chiara Salerno**
-* **Gianluca Giavatto**
-* **Simone Riggi**
 
 Sviluppare un’applicazione back-end, basata sull’utilizzo del framework Spring Boot, che offra un insieme di
 punti di accesso REST volti a permettere il salvataggio e l’accesso a sequenze di posizioni geografiche di
