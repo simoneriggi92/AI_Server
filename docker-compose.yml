@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  springboot:
+    build: .
+    # image: registry.gitlab.com/idgst/gruppo3mongo-demo:latest
+    restart: always
+    container_name: springboot
+    ports:
+      - 8080:8080
+    working_dir: /opt/app
+    depends_on:
+      - mongo
+    networks: 
+      - mobility
+  
+  mongo:
+    build:
+      context: .
+      dockerfile: Dockerfile2
+    container_name: gruppo3mongo
+    ports:  # for demo/debug purpose only
+      - 27017:27017
+    restart: always
+    networks: 
+      - mobility
+  
+networks:
+  mobility:
+    driver: bridge

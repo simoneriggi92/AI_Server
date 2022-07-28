@@ -1,0 +1,4 @@
+Nel file json-positions.txt c'è una sequenza di posizioni che un utente puo' caricare (49 posizioni di cui
+una non valida).
+
+Lanciare docker-compose up da questa cartella
